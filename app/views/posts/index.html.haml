@@ -4,8 +4,8 @@
       .content__left--image
     .content__right
       .content__right--top
-        = post.title
-      .content__right__bottom
         = link_to post.title, post_path(post.id), class: "content__right__top--title"
+      .content__right__bottom
+        = post.user.nickname
         .content__right__bottom--date
           = post.created_at
